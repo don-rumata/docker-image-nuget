@@ -33,4 +33,4 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: don-rumata/nuget-exe:latest
+        tags: donrumata/nuget-exe:latest
