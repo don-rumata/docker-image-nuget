@@ -9,10 +9,11 @@ Original [NuGet](https://www.nuget.org/) in Docker.
 ### How to install `AvaloniaUI`
 
 ```bash
-docker run donrumata/nuget-exe --volume $(pwd):/var/cache/nuget --rm nuget-exe nuget install avalonia
+docker run nuget-exe --volume $(pwd):/var/cache/nuget --rm donrumata/nuget-exe nuget install avalonia
 ```
+
 ```bash
-docker run --name donrumata/nuget-exe --volume $(pwd):/var/cache/nuget --rm nuget-exe nuget install avalonia -version 11.0.10
+docker run --name nuget-exe --volume $(pwd):/var/cache/nuget --rm donrumata/nuget-exe nuget install avalonia -version 11.0.10
 ```
 
 ## How to build
